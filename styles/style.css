@@ -1,0 +1,152 @@
+body 
+{
+    width: 100vw;
+    overflow-x: hidden;
+    background: #1F2529;
+}
+
+.navBtn
+{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 20px;
+    width: 100%;
+    transition: .3s;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBtn:hover
+{
+    background: #A8D4F1;
+    transition: .3s;
+}
+
+.navBtn:hover::after
+{
+    position: absolute;
+    content: attr(data-section);
+    background: rgba(168, 212, 241, .8);
+    top: 90px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3A6C8D;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+.active
+{
+    transition: .3s;
+    background: rgba(168, 212, 241, .8);
+    color: #fff;
+}
+
+.navBtnDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    background: #2A5875;
+    color: #6DAFD9;
+    font-size: 30px;
+    margin: 0;
+}
+
+.markdownContRoot
+{
+    position: relative;
+}
+
+.markdownCont
+{
+    width: 95%;
+    margin: 1em;
+    padding-bottom: 20px;
+}
+
+.markdownGitEditDiv
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.markdownGitEdit
+{
+    text-decoration: none;
+    color: #3E3E3E;
+}
+
+.markdownGitEdit:hover{
+    color: #3E3E3E;
+}
+
+#navShortcut
+{
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#navKeys
+{
+    display: flex;
+    flex-direction: row;
+    transform: scale(.8);
+    transition: .3s;
+}
+
+.navKey
+{
+    border: 1px solid rgba(255,255,255,.8);
+    padding: 7px 6px;
+    border-radius: 5px;
+    margin: 0 .1em;
+}
+
+.navKeyDesc
+{
+    margin-bottom: .3em;
+}
+
+.header
+{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    margin-top: .5em;
+}
+
+.subHeader
+{
+    font-size: 10px;
+    margin: 0;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: #fff;
+    opacity: .5;
+    font-size: 10px;
+}
+
+.fa-magento
+{
+    color: #EC6737;
+}

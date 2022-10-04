@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <head>
+        <title>Notes for Adobe Certified Professional</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="scripts/webcomponents-loader.min.js"></script>
+        <script type="module" src="scripts/zero-md.min.js"></script>   
+        <script src="scripts/bootstrap.min.js"></script> 
+        <script defer src="scripts/index.js"></script> 
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="col-md-12 navBtnDiv">
+                    <div class="navBtn active" id="navBtnOne" data-target="sectionOne" data-section="Section 1" onclick="scrollToSection(event)"><i class="fas fa-dice-one"></i></div>
+                    <div class="navBtn" id="navBtnTwo" data-target="sectionTwo" data-section="Section 2" onclick="scrollToSection(event)"><i class="fas fa-dice-two"></i></div>
+                    <div class="navBtn" id="navBtnThree" data-target="sectionThree" data-section="Section 3" onclick="scrollToSection(event)"><i class="fas fa-dice-three"></i></div>
+                    <div class="navBtn" id="navBtnFour" data-target="sectionFour" data-section="Section 4" onclick="scrollToSection(event)"><i class="fas fa-dice-four"></i></div>
+                    <div class="navBtn" id="navBtnFive" data-target="sectionFive" data-section="Section 5" onclick="scrollToSection(event)"><i class="fas fa-dice-five"></i></div>
+                    <div class="navBtn" id="navBtnSix" data-target="sectionSix" data-section="Section 6" onclick="scrollToSection(event)"><i class="fas fa-dice-six"></i></div>
+                    <div class="col-md-12" id="navShortcut">
+                        <span class="navKeyDesc"><i class="fas fa-keyboard"></i> Keyboard Shortcut</span>
+                        <div class="col-md-12" id="navKeys">
+                            <span class="col-md-2 navKey">1</span>
+                            <span class="col-md-2 navKey">2</span>
+                            <span class="col-md-2 navKey">3</span>
+                            <span class="col-md-2 navKey">4</span>
+                            <span class="col-md-2 navKey">5</span>
+                            <span class="col-md-2 navKey">6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 markdownContRoot">
+                <div class="col-md-12 header">
+                    <i class="fab fa-magento"></i> Adobe Certified Professional Notes
+                    <span class="subHeader">(AD0-E711)</span>
+                </div>
+                <div class="col-md-12 markdownCont">
+                    <div class="accordion" id="sectionNotes">
+                        <div class="accordion-item" id="sectionOne">
+                            <h2 class="accordion-header" id="sectionOneHeader">
+                              <button class="accordion-button collapsed show" type="button" id="sectionOneBtn" data-bs-toggle="collapse" data-bs-target="#sectionOneCont" aria-expanded="true" aria-controls="sectionOneCont" data-nav-btn="navBtnOne" onclick="updateActiveAccordion(event)">
+                                Section 1: Working with Admin
+                              </button>
+                            </h2>
+                            <div id="sectionOneCont" class="accordion-collapse collapsed collapse show" aria-labelledby="sectionOneHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION1.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="sectionTwo">
+                            <h2 class="accordion-header" id="sectionTwoHeader">
+                              <button class="accordion-button collapsed" type="button" id="sectionTwoBtn" data-bs-toggle="collapse" data-bs-target="#sectionTwoCont" aria-expanded="false" aria-controls="sectionTwoCont" data-nav-btn="navBtnTwo" onclick="updateActiveAccordion(event)">
+                                Section 2: Architecture
+                              </button>
+                            </h2>
+                            <div id="sectionTwoCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionTwoHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION2.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="sectionThree">
+                            <h2 class="accordion-header" id="sectionThreeHeader">
+                              <button class="accordion-button collapsed" type="button" id="sectionThreeBtn" data-bs-toggle="collapse" data-bs-target="#sectionThreeCont" aria-expanded="false" aria-controls="sectionThreeCont" data-nav-btn="navBtnThree" onclick="updateActiveAccordion(event)">
+                                Section 3: EAV/Database
+                              </button>
+                            </h2>
+                            <div id="sectionThreeCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionThreeHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION3.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="sectionFour">
+                            <h2 class="accordion-header" id="sectionFourHeader">
+                              <button class="accordion-button collapsed" type="button" id="sectionFourBtn" data-bs-toggle="collapse" data-bs-target="#sectionFourCont" aria-expanded="false" aria-controls="sectionFourCont" data-nav-btn="navBtnFour" onclick="updateActiveAccordion(event)">
+                                Section 4: Layout/UI
+                              </button>
+                            </h2>
+                            <div id="sectionFourCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionFourHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION4.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="sectionFive">
+                            <h2 class="accordion-header" id="sectionFiveHeader">
+                              <button class="accordion-button collapsed" type="button" id="sectionFiveBtn" data-bs-toggle="collapse" data-bs-target="#sectionFiveCont" aria-expanded="false" aria-controls="sectionFiveCont" data-nav-btn="navBtnFive" onclick="updateActiveAccordion(event)">
+                                Section 5: Checkout and Sales
+                              </button>
+                            </h2>
+                            <div id="sectionFiveCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionFiveHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION5.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" id="sectionSix">
+                            <h2 class="accordion-header" id="sectionSixHeader">
+                              <button class="accordion-button collapsed" type="button" id="sectionSixBtn" data-bs-toggle="collapse" data-bs-target="#sectionSixCont" aria-expanded="false" aria-controls="sectionSixCont" data-nav-btn="navBtnSix" onclick="updateActiveAccordion(event)">
+                                Section 6: Catalog
+                              </button>
+                            </h2>
+                            <div id="sectionSixCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionSixHeader" data-bs-parent="#sectionNotes">
+                                <div class="accordion-body">
+                                    <zero-md src="markdowns/SECTION6.md"></zero-md>
+                                    <div class="markdownGitEditDiv">
+                                        <a class="markdownGitEdit" href="#" target="_blank"><i class="fab fa-github"></i> Edit Markdown on Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 footer">
+                    Copyright © 2022. All Right Reserved. Made with <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i> by SC Ong.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

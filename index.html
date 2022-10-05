@@ -14,10 +14,10 @@
         <script defer src="scripts/index.js"></script> 
     </head>
     <body>
-        <div class="row">
+        <div class="col-md-12 row">
             <div class="col-md-2">
                 <div class="col-md-12 navBtnDiv">
-                    <div class="navBtn active" id="navBtnOne" data-target="sectionOne" data-section="Section 1" onclick="scrollToSection(event)"><i class="fas fa-dice-one"></i></div>
+                    <div class="navBtn" id="navBtnOne" data-target="sectionOne" data-section="Section 1" onclick="scrollToSection(event)"><i class="fas fa-dice-one"></i></div>
                     <div class="navBtn" id="navBtnTwo" data-target="sectionTwo" data-section="Section 2" onclick="scrollToSection(event)"><i class="fas fa-dice-two"></i></div>
                     <div class="navBtn" id="navBtnThree" data-target="sectionThree" data-section="Section 3" onclick="scrollToSection(event)"><i class="fas fa-dice-three"></i></div>
                     <div class="navBtn" id="navBtnFour" data-target="sectionFour" data-section="Section 4" onclick="scrollToSection(event)"><i class="fas fa-dice-four"></i></div>
@@ -45,11 +45,11 @@
                     <div class="accordion" id="sectionNotes">
                         <div class="accordion-item" id="sectionOne">
                             <h2 class="accordion-header" id="sectionOneHeader">
-                              <button class="accordion-button collapsed show" type="button" id="sectionOneBtn" data-bs-toggle="collapse" data-bs-target="#sectionOneCont" aria-expanded="true" aria-controls="sectionOneCont" data-nav-btn="navBtnOne" onclick="updateActiveAccordion(event)">
+                              <button class="accordion-button collapsed" type="button" id="sectionOneBtn" data-bs-toggle="collapse" data-bs-target="#sectionOneCont" aria-expanded="false" aria-controls="sectionOneCont" data-nav-btn="navBtnOne" onclick="updateActiveAccordion(event)">
                                 Section 1: Working with Admin
                               </button>
                             </h2>
-                            <div id="sectionOneCont" class="accordion-collapse collapsed collapse show" aria-labelledby="sectionOneHeader" data-bs-parent="#sectionNotes">
+                            <div id="sectionOneCont" class="accordion-collapse collapsed collapse" aria-labelledby="sectionOneHeader" data-bs-parent="#sectionNotes">
                                 <div class="accordion-body">
                                     <zero-md src="markdowns/SECTION1.md"></zero-md>
                                     <div class="markdownGitEditDiv">

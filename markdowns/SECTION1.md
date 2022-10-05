@@ -43,7 +43,7 @@
 
     | Admin Menu  | Stores System Configuration |
     |--------|-------------|
-    | ![Admin Menu](./images/acl_menu.png) | ![Stores System Configuration](./images/acl_system_config.png) |
+    | ![Admin Menu](../images/s1_acl_menu.png) | ![Stores System Configuration](../images/s1_acl_system_config.png) |
     
     </center>
 

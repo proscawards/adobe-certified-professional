@@ -11,13 +11,20 @@ body
     cursor: pointer;
     background: transparent;
     padding: 20px;
-    width: 100%;
+    width: inherit;
     transition: .3s;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: .3s;
+}
+
+.navBtnHidden
+{
+    transform: scale(0) rotate(90deg);
+    transition: .3s;
 }
 
 .navBtn:hover
@@ -61,6 +68,14 @@ body
     font-size: 30px;
     margin: 0;
     padding-bottom: 20px;
+    width: 100%;
+    transition: .3s;
+}
+
+.navBtnDivHidden
+{
+    width: 0%;
+    transition: .3s;
 }
 
 .markdownContRoot
@@ -68,11 +83,16 @@ body
     position: relative;
 }
 
+.markdownOuterCont
+{
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
 .markdownCont
 {
-    width: 95%;
-    margin: 1em;
-    padding-bottom: 20px;
+    padding: 20px 50px 30px 55px;
 }
 
 .markdownGitEditDiv
@@ -102,11 +122,17 @@ body
     text-align: center;
 }
 
-#navKeys
+.navKeys
 {
     display: flex;
     flex-direction: row;
     transform: scale(.8);
+    transition: .3s;
+}
+
+.navKeysHidden
+{
+    transform: scale(0);
     transition: .3s;
 }
 
@@ -121,20 +147,35 @@ body
 .navKeyDesc
 {
     margin-bottom: .3em;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: .3s;
+}
+
+.navKeyDescHidden
+{
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: .3s;
 }
 
 .header
 {
+    position: relative;
     color: #fff;
     font-size: 30px;
     font-family: 'Merriweather', serif;
     margin-top: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subHeader
 {
     font-size: 10px;
     margin: 0;
+    margin-top: 1.5em;
 }
 
 .footer
@@ -150,4 +191,80 @@ body
 .fa-magento
 {
     color: #EC6737;
+    margin-right: .5em;
+}
+
+.rootDiv
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuDivHidden
+{
+    width: 0%;
+    transition: .3s;
+}
+
+.menuIconDiv
+{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 2;
+    background: #2A5875;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px 35px;
+    width: fit-content;
+    transition: .3s;
+}
+
+.menuIconDiv::before
+{
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    padding: 30px 35px;
+    background: transparent;
+    border-bottom-left-radius: 10px;
+    box-shadow: -10px 0px 0px #2A5875;
+}
+
+.menuIconDiv::after
+{
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    padding: 30px 35px;
+    background: transparent;
+    border-top-left-radius: 10px;
+    box-shadow: -10px -1px 0px #2A5875;
+}
+
+.menuIconDivHidden
+{
+    width: 0%;
+    transition: .3s;
+}
+
+.menuIcon
+{
+    position: fixed;
+    color: rgba(255, 255, 255, .5);
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    margin-top: .5em;
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menuIcon:hover, .menuIcon:focus{
+    color: rgba(255, 255, 255, .8);
 }

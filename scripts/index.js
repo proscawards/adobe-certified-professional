@@ -137,7 +137,7 @@ function loadPreviousActiveAccordion()
     return atob(localStorage.getItem(ACTIVE_ACCORDION)).charAt(0);
 }//end loadPreviousActiveAccordion()
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keypress keydown', function(e) {
     let name = e.key;
     if (Object.keys(NUMBER_MAP).includes(name)) {
         let nameStr = NUMBER_MAP[name];
@@ -153,3 +153,51 @@ document.addEventListener("DOMContentLoaded", function(e) {
         scrollToSectionByKey(nameStr);
     }
 });
+
+document.querySelector('.menuIcon').addEventListener('click', function(e) {
+    let isHidden = e.target.classList.contains('hidden');
+    if (isHidden) {
+        showHideMenu();
+        e.target.classList.remove('hidden');
+    } else {
+        showHideMenu(true);
+        e.target.classList.add('hidden');
+    }
+});
+
+/**
+ * Should the menu show or hide now?
+ * @param boolean shouldHide = false
+ */
+function showHideMenu(shouldHide = false)
+{
+    let navBtnDiv = document.querySelector('.navBtnDiv');
+    let navBtns = document.querySelectorAll('.navBtn');
+    let navKeys = document.querySelector('.navKeys');
+    let navKeyDesc = document.querySelector('.navKeyDesc');
+    let markdownContRoot = document.querySelector('.markdownContRoot');
+    let menuDiv = document.querySelector('.menuDiv');
+    if (shouldHide) {
+        navBtnDiv.classList.add('navBtnDivHidden');
+        navBtns.forEach(btn => {
+            btn.classList.add('navBtnHidden');
+        });
+        navKeys.classList.add('navKeysHidden');
+        navKeyDesc.classList.add('navKeyDescHidden');
+        menuDiv.classList.remove('col-md-2');
+        menuDiv.classList.add('menuDivHidden');
+        markdownContRoot.classList.remove('col-md-10');
+        markdownContRoot.classList.add('col-md-12');
+    } else {
+        navBtnDiv.classList.remove('navBtnDivHidden');
+        navBtns.forEach(btn => {
+            btn.classList.remove('navBtnHidden');
+        });
+        navKeys.classList.remove('navKeysHidden');
+        navKeyDesc.classList.remove('navKeyDescHidden');
+        markdownContRoot.classList.remove('col-md-12');
+        menuDiv.classList.remove('menuDivHidden');
+        menuDiv.classList.add('col-md-2');
+        markdownContRoot.classList.add('col-md-10');
+    }
+}//end showHideMenu()

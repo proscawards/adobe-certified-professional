@@ -12,7 +12,7 @@
    - In __adminhtml/system.xml__:<br/>`<resource>Born_Reports::reports</resource>`
 
    The content of __acl.xml__ is stated as below:
-    ```
+    ```xml
     <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
         <acl>
             <resources>
@@ -43,7 +43,7 @@
 
     | Admin Menu  | Stores System Configuration |
     |--------|-------------|
-    | ![Admin Menu](../images/s1_acl_menu.png) | ![Stores System Configuration](../images/s1_acl_system_config.png) |
+    | ![Admin Menu](images/s1_acl_menu.png) | ![Stores System Configuration](images/s1_acl_system_config.png) |
     
     </center>
 
@@ -103,6 +103,7 @@
    - __`ui_component`__ is the reusable UI components to be defined in the grid or form, such as columns, filters, export, buttons and etc.
    - __`DataProvider`__ is the collection of data where the grid is depending on, or the data of the form to be edited. 
    - __`Controller`__ is responsible for rendering the layout to the client.
+
 3. __Identify the files to use when creating a store/admin config and menu items__
    
    File structure to create system configuration and menu items are:

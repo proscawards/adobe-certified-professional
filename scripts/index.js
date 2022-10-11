@@ -137,7 +137,7 @@ function loadPreviousActiveAccordion()
     return atob(localStorage.getItem(ACTIVE_ACCORDION)).charAt(0);
 }//end loadPreviousActiveAccordion()
 
-document.addEventListener('keypress keydown', function(e) {
+document.addEventListener('keydown', function(e) {
     let name = e.key;
     if (Object.keys(NUMBER_MAP).includes(name)) {
         let nameStr = NUMBER_MAP[name];

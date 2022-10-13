@@ -2,7 +2,7 @@
    
    - Scenario #1: Merchant decided to introduce new category, with a dedicated attribute set and some custom attributes<br/>
      To create new custom attribute(s), head on to __Stores__→__Attributes__→__Attribute Set__→__Add New Attribute__. 
-     ![Attribute Set](images/s3_attribute.png)
+     >![Attribute Set](images/s3_attribute.png)
      
      > __Note:__<br/>
      > To enable the attribute as configurable product attribute, please ensure that __Catalog Input Type for Store Owner__ is configured as below ONLY. Else, configurable product attribute will not display the newly created attribute, despite the scope is set to _Global_.
@@ -11,10 +11,10 @@
      >- Dropdown  
      
      To create new attribute set, head on to __Stores__→__Attributes__→__Attribute Set__→__Add Attribute Set__. Once attribute set is created, open the newly created attribute set.
-     ![Attribute Set](images/s3_attribute_set.png)
+     >![Attribute Set](images/s3_attribute_set.png)
      Inside this page, we can remove existing attribute assigned under the group of nodes, or introduce __Unassigned Attributes__ into the attribute set.
      Under __Unassigned Attributes__, search for the newly created custom attribute, which is _Fashion Color_ in this case.
-     ![Drag & Drop Attribute](images/s3_dnd_attribute.png)
+     >![Drag & Drop Attribute](images/s3_dnd_attribute.png)
      Drag and Drop the custom attribute into desired group. Once completed, save the attribute set.
 
 2. __Describe different types of attributes__

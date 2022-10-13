@@ -81,7 +81,7 @@
     ```
     <config_path>settlementwithdrawal/settings/create_withdrawal_request_cron_frequency</config_path>
     ``` 
-    ![System Configuration](images/s2_cron_system_config.png)
+    >![System Configuration](images/s2_cron_system_config.png)
 
     Within __`crontab.xml`__, there is a `group` tag, indicating all these jobs are categorized under this specific group. Groups are created within __`cron_groups.xml`__. __`cron_groups.xml`__ specifies the behavior of all children jobs within the group itself. The content of __`cron_groups.xml`__:
 
@@ -233,7 +233,7 @@
     ```
 
     Indexing can also be performed from Magento Backoffice. Head on to __System__→__Tools__→__Index Management__.
-    ![Index Management](images/s2_index_management.png)
+    >![Index Management](images/s2_index_management.png)
 
 8. __Describe localization__
 
@@ -325,7 +325,7 @@
     
     URL rewrites are essential to make the website more SEO friendly. In Magento, Product, Category and CMS page are dynamically applying URL rewrites upon creation. To manage URL rewrites, head on to __Marketing__→__SEO & Search__→__URL Rewrites__. To proceed, click on __Add URL Rewrite__ or edit existing URL rewrites.
 
-    ![URL Rewrite for Product](images/s2_url_rewrite.png)
+    >![URL Rewrite for Product](images/s2_url_rewrite.png)
     - `Request Path` will be the SEO friendly URL created by Magento.
     - `Target Path` will be the original url to be mapped with the `Request Path`.
     - `Redirect Type` will be either __No__, __Temporary(302)__ or __Permanent(301)__.
@@ -333,7 +333,7 @@
 12. __Describe the Magento caching system__
     
     Magento by default caches everything which ranges from data to files. Cache Management is accessible in Magento Backoffice, head on to __System__→__Tools__→__Cache Management__.
-    ![Cache Management](images/s2_cache_management.png)
+    >![Cache Management](images/s2_cache_management.png)
 
     Cache can be clean up via CLI command `php bin/magento cache:flush`, which is partial cleanup, or `php bin/magento cache:clean`, which is fully cleanup.
 

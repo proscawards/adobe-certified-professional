@@ -177,6 +177,7 @@ function showHideMenu(shouldHide = false)
     let navKeyDesc = document.querySelector('.navKeyDesc');
     let markdownContRoot = document.querySelector('.markdownContRoot');
     let menuDiv = document.querySelector('.menuDiv');
+    let menuIconDiv = document.querySelector('.menuIconDiv');
     if (shouldHide) {
         navBtnDiv.classList.add('navBtnDivHidden');
         navBtns.forEach(btn => {
@@ -186,6 +187,7 @@ function showHideMenu(shouldHide = false)
         navKeyDesc.classList.add('navKeyDescHidden');
         menuDiv.classList.remove('col-md-2');
         menuDiv.classList.add('menuDivHidden');
+        menuIconDiv.classList.add('menuIconDivHidden');
         markdownContRoot.classList.remove('col-md-10');
         markdownContRoot.classList.add('col-md-12');
     } else {
@@ -198,6 +200,7 @@ function showHideMenu(shouldHide = false)
         markdownContRoot.classList.remove('col-md-12');
         menuDiv.classList.remove('menuDivHidden');
         menuDiv.classList.add('col-md-2');
+        menuIconDiv.classList.remove('menuIconDivHidden');
         markdownContRoot.classList.add('col-md-10');
     }
 }//end showHideMenu()

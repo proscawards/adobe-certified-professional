@@ -34,7 +34,7 @@
    >![Conditions](images/s5_cart_rule_conditions.png)
 
    We will set the Conditions for the demo as below, so that only item in cart which base price is greater or equals to RM 10 will be targeted. In this case, Item 1 will fulfill the condition.
-   >![Conditions](images/s5_cart_rule_conditions_demo.png)
+   >![Conditions](images/s5_cart_rule_conditions_sample.png)
 
    Under the Actions section, we have 4 options to apply from, 
    >![Actions](images/s5_cart_rule_actions.png)
